@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0px;
+  margin: 0rem;
 }
 html {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -23,6 +23,7 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
+  
 }
 article + article {
   margin-top: 50px;
@@ -68,4 +69,7 @@ aside {
   border-radius: 10px;
   background-color: gray;
   font-family: Arial, Helvetica, sans-serif;
+}
+.main-header {
+  font-size: 3em;
 }
