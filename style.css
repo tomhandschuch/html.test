@@ -48,3 +48,6 @@ a:active {
 li a:link {
 color: black;
 }
+#expiriences, #skills, #findme {
+  border-top: 2px solid grey;
+}
