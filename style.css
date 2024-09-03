@@ -54,10 +54,7 @@ color: black;
 #expiriences, #skills, #findme {
   border-top: .1rem solid grey;
 }
-.job {
-  display: inline;
-}
-.job-when {
+.job, .job-when {
   display: inline;
 }
 h2 {
