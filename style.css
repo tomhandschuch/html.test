@@ -85,6 +85,7 @@ nav {
   font-size: 1em;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 @media print {
