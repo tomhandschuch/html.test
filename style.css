@@ -12,8 +12,8 @@ body {
   --darkgoldenrod-color: darkgoldenrod;
   --lightslategray-color: lightslategray;
   --black-color: black;
-
 }
+
 html {
   font-family: monospace;
   font-size: 16px;
@@ -26,7 +26,11 @@ h3 {
 
 header:nth-child(1) {
   text-align: center;
-  background-image: linear-gradient(90deg, var(--lightblue-color), var(--white-color));
+  background-image: linear-gradient(
+    90deg,
+    var(--lightblue-color),
+    var(--white-color)
+  );
   padding: 3rem 1rem;
   padding-top: 4.5rem;
 }
@@ -34,7 +38,6 @@ main {
   max-width: 65ch;
   margin: 0 auto;
   padding: 1rem;
-  
 }
 article + article {
   margin-top: 2.5rem;
@@ -59,52 +62,72 @@ a:active {
   color: var(--white-color);
 }
 li a:link {
-color: var(--black-color);
+  color: var(--black-color);
 }
-#expiriences, #skills, #findme {
-  border-top: .1rem solid var(--lightblue-color);
+#expiriences,
+#skills,
+#findme {
+  border-top: 0.1rem solid var(--lightblue-color);
 }
-.job, .job-when {
+.job,
+.job-when {
   display: flex;
   flex-direction: column;
 }
 h2 {
   position: relative;
-  right: .5rem;
+  right: 0.5rem;
 }
 aside {
   position: absolute;
-  top:.5rem;
-  right:.5rem;
-  padding:.5rem;
-  border: .1rem var(--black-color);
-  border-radius:.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  border: 0.1rem var(--black-color);
+  border-radius: 0.5rem;
   background-color: var(--gray-color);
   font-family: Arial, Helvetica, sans-serif;
+  transform-origin: 100% 0%;
+  transition: transform 1s;
 }
+
+header: 
+
 .heading-group {
   font-size: 4rem;
 }
+
 .main-header {
   font-size: 1em;
 }
+
 .main-subheading {
-  font-size: .25em;
+  font-size: 0.25em;
 }
-nav {
+
+.navigation {
   font-size: 1em;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+.nav-link {
+  transition: color 0.5s ease-in-out;
+}
+
+.nav-link:focus {
+  transition: color 1s ease-in;
+}
+
 @media print {
-  nav, aside{
+  nav,
+  aside {
     display: none;
   }
 }
 
-@media screen and (min-width:786px) {
+@media screen and (min-width: 786px) {
   html {
     font-size: 18px;
   }
@@ -113,15 +136,15 @@ nav {
   }
   aside {
     position: fixed;
-    top:.5rem;
-    right:.5rem;
-    padding:.5rem;
-    border: .1rem var(--black-color);
-    border-radius:.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    border: 0.1rem var(--black-color);
+    border-radius: 0.5rem;
     background-color: var(--gray-color);
     font-family: Arial, Helvetica, sans-serif;
   }
-  nav {
+  .navigation {
     font-size: 1em;
     display: flex;
     flex-direction: row;
@@ -135,7 +158,7 @@ nav {
   }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
   html {
     font-size: 20px;
   }
@@ -144,11 +167,11 @@ nav {
   }
   aside {
     position: fixed;
-    top:.5rem;
-    right:.5rem;
-    padding:.5rem;
-    border: .1rem var(--black-color);
-    border-radius:.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    border: 0.1rem var(--black-color);
+    border-radius: 0.5rem;
     background-color: var(--gray-color);
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -157,13 +180,17 @@ nav {
 @media screen and (prefers-color-scheme: dark) {
   body {
     --page-background-color: var(--black-color);
-  --page-text-color: var(--white-color);
+    --page-text-color: var(--white-color);
   }
 }
 
 footer {
   margin-top: 3rem;
-  background-image: linear-gradient(270deg, var(--lightblue-color), var(--white-color));
+  background-image: linear-gradient(
+    270deg,
+    var(--lightblue-color),
+    var(--white-color)
+  );
   padding: 2rem;
 }
 
@@ -173,6 +200,5 @@ footer {
 }
 
 footer a:link {
-   color: var(--black-color);
+  color: var(--black-color);
 }
-
