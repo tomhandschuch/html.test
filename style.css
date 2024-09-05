@@ -91,7 +91,9 @@ aside {
   transition: transform 1s;
 }
 
-header: 
+header:hover aside {
+  transform: scale(1.5);
+}
 
 .heading-group {
   font-size: 4rem;
