@@ -3,6 +3,16 @@
 }
 body {
   margin: 0rem;
+  --page-background-color: var(--second-color);
+  --page-text-color: var(--black-color);
+  --lightblue-color: lightblue;
+  --white-color: white;
+  --gray-color: gray;
+  --darksaltblue-color: darkslateblue;
+  --darkgoldenrod-color: darkgoldenrod;
+  --lightslategray-color: lightslategray;
+  --black-color: black;
+
 }
 html {
   font-family: monospace;
@@ -16,7 +26,7 @@ h3 {
 
 header:nth-child(1) {
   text-align: center;
-  background-image: linear-gradient(90deg, lightblue, white);
+  background-image: linear-gradient(90deg, var(--lightblue-color), var(--white-color));
   padding: 3rem 1rem;
   padding-top: 4.5rem;
 }
@@ -33,26 +43,26 @@ header > a + a {
   margin-left: 2rem;
 }
 a:link {
-  color: darkgrey;
+  color: var(--gray-color);
 }
 a:visited {
-  color: darkslateblue;
+  color: var(--darksaltblue-color);
 }
 a:hover {
-  color: darkgoldenrod;
+  color: var(--darkgoldenrod-color);
 }
 a:active {
-  color: lightslategray;
+  color: var(--lightslategray-color);
 }
 ::selection {
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 li a:link {
-color: black;
+color: var(--black-color);
 }
 #expiriences, #skills, #findme {
-  border-top: .1rem solid lightblue;
+  border-top: .1rem solid var(--lightblue-color);
 }
 .job, .job-when {
   display: flex;
@@ -67,9 +77,9 @@ aside {
   top:.5rem;
   right:.5rem;
   padding:.5rem;
-  border: .1rem black;
+  border: .1rem var(--black-color);
   border-radius:.5rem;
-  background-color: gray;
+  background-color: var(--gray-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 .heading-group {
@@ -106,9 +116,9 @@ nav {
     top:.5rem;
     right:.5rem;
     padding:.5rem;
-    border: .1rem black;
+    border: .1rem var(--black-color);
     border-radius:.5rem;
-    background-color: gray;
+    background-color: var(--gray-color);
     font-family: Arial, Helvetica, sans-serif;
   }
   nav {
@@ -137,16 +147,23 @@ nav {
     top:.5rem;
     right:.5rem;
     padding:.5rem;
-    border: .1rem black;
+    border: .1rem var(--black-color);
     border-radius:.5rem;
-    background-color: gray;
+    background-color: var(--gray-color);
     font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: var(--black-color);
+  --page-text-color: var(--white-color);
   }
 }
 
 footer {
   margin-top: 3rem;
-  background-image: linear-gradient(270deg, lightblue, white);
+  background-image: linear-gradient(270deg, var(--lightblue-color), var(--white-color));
   padding: 2rem;
 }
 
@@ -156,6 +173,6 @@ footer {
 }
 
 footer a:link {
-   color: black;
+   color: var(--black-color);
 }
 
