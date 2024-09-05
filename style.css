@@ -145,9 +145,17 @@ nav {
 }
 
 footer {
-  margin-top: 5rem;
+  margin-top: 3rem;
   background-image: linear-gradient(270deg, lightblue, white);
   padding: 2rem;
+}
+
+.footer-container {
   text-align: center;
+  margin: 0;
+}
+
+footer a:link {
+   color: black;
 }
 
