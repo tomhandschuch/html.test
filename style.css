@@ -182,6 +182,9 @@ header:hover aside {
   main {
     max-width: 75ch;
   }
+  .contant-wrapper {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
