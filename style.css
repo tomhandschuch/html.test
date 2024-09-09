@@ -39,6 +39,10 @@ header:nth-child(1) {
   padding-top: 4.5rem;
 }
 
+header p::after {
+  content: " 👨🏽‍💻";
+}
+
 main {
   max-width: 60ch;
   margin: 0 auto;
